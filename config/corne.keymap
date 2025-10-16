@@ -1,0 +1,67 @@
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
+
+// Define layers
+#define ENTHIUM 0
+#define NAV 1
+#define SYM 2
+
+// Home Row Mods Configuration
+/ {
+    behaviors {
+        hm_l: homerow_mods_left {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS_LEFT";
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
+        hm_r: homerow_mods_right {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS_RIGHT";
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
+    };
+};
+
+
+/ {
+    keymap {
+        compatible = "zmk,keymap";
+
+        enthium_layer {
+            bindings = <
+                &kp Z  &kp Y     &kp U      &kp O      &kp SEMI          &kp Q  &kp L      &kp D      &kp P      &kp X
+                &hm_l LALT C  &hm_l LCTL I  &hm_l LSHFT E  &hm_l LGUI A  &kp COMMA         &hm_r RGUI K  &hm_r RSHFT H  &hm_r RCTL T  &hm_r RALT N  &kp S &kp F
+                &kp SQT &kp MINUS &kp EQUAL  &kp DOT   &kp FSLH         &kp J  &kp M      &kp G      &kp B      &kp V
+                                     &mo NAV  &kp R  &mo SYM
+            >;
+        };
+
+        nav_layer {
+            bindings = <
+                &trans &trans &trans &trans &trans        &trans &trans &trans &trans &trans
+                &kp C_PREV &kp C_NEXT &kp C_PP &kp C_STOP &trans       &kp PG_UP &kp HOME &kp UP &kp END &trans &trans
+                &trans &trans &trans &trans &trans        &kp PG_DN &kp LEFT &kp DOWN &kp RIGHT &trans
+                                &trans &trans &trans
+            >;
+        };
+
+        sym_layer {
+            bindings = <
+                &kp F1 &kp F2 &kp F3 &kp F4 &kp F5       &kp F6 &kp F7 &kp F8 &kp F9 &kp F10
+                &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT      &kp CARET &kp AMPS &kp ASTRK &kp LPAR &kp RPAR &kp F11
+                &kp GRAVE &kp LBRC &kp RBRC &kp LPRN &kp RPRN      &kp N1 &kp N2 &kp N3 &kp PLUS &kp F12
+                                &trans &trans &trans
+            >;
+        };
+    };
+};
+
