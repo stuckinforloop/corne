@@ -18,7 +18,6 @@ include:
 # Revision 2
   - board: seeeduino_xiao_ble
     shield: corne_xiao_v2_left
-    snippet: studio-rpc-usb-uart
   - board: seeeduino_xiao_ble
     shield: corne_xiao_v2_right
   - board: seeeduino_xiao_ble
