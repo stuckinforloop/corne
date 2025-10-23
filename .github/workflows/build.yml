@@ -1,15 +1,7 @@
 name: Build ZMK firmware
 on:
   push:
-    paths:
-      - "config/**"
-      - "zephyr/**"
-      - "build.yaml"
   pull_request:
-    paths:
-      - "config/**"
-      - "zephyr/**"
-      - "build.yaml"
   workflow_dispatch:
 
 jobs:
