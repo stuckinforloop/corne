@@ -45,7 +45,7 @@
 //                       │ CMD │ SYM │ SPC │          │  R  │ FN  │ ENT │
     &kp ESC           &homerow_mod LSHIFT Z &kp Y   &kp O        &kp U        &kp EQUAL              &kp Q   &kp L &kp D     &kp P   &kp X    &kp DEL
     &kp W             &kp C                 &kp I   &kp A        &kp E        &kp SEMI               &kp K   &kp H &kp T     &kp N   &kp S    &kp F
-    &kp LCTRL         &kp SQT               &kp MINUS &kp COMMA  &kp DOT      &kp FSLH  &none      &none   &kp J   &kp M &kp G     &kp B   &kp V    &kp LALT
+    &kp LCTRL         &kp SQT               &kp MINUS &kp COMMA  &kp DOT      &kp FSLH  &kp J      &kp M   &kp G   &kp B &kp V     &kp LALT
                                                       &kp LGUI    &mo SYM      &kp SPACE              &kp R   &mo FN &kp RET
             >;
         };
@@ -61,7 +61,7 @@
 //                       │ CMD │ SYM │ SPC │          │  :  │ FN  │ ENT │
     &kp N1            &kp N2                &kp N3   &kp N4       &kp N5       &kp N6                 &kp N7  &kp N8 &kp N9   &kp N0  &kp MINUS &kp EQUAL
     &kp LPAR          &kp LBKT              &kp LBRC &kp LT       &kp QUESTION &trans                 &kp GRAVE &kp GT &kp RBRC &kp RBKT &kp RPAR &kp DQT
-    &kp EXCL          &kp AT                &kp HASH &kp DLLR     &kp PRCNT    &kp CARET &none      &none   &kp AMPS &kp KP_MULTIPLY &kp PLUS &kp FSLH &kp PIPE &kp BSLH
+    &kp EXCL          &kp AT                &kp HASH &kp DLLR     &kp PRCNT    &kp CARET &kp AMPS   &kp KP_MULTIPLY &kp PLUS &kp FSLH &kp PIPE &kp BSLH
                                                       &kp LGUI    &mo SYM      &kp SPACE              &kp COLON &mo FN &kp RET
             >;
         };
@@ -77,7 +77,7 @@
 //                       │ CMD │ SYM │ SPC │          │  R  │ FN  │ ENT │
     &kp F1            &kp F2                &kp F3   &kp F4       &kp F5       &kp F6                 &kp F7  &kp F8 &kp F9   &kp F10 &kp F11  &kp F12
     &kp H             &kp J                 &kp K    &kp L        &trans       &trans                 &kp HOME &kp UP &kp END &kp PG_UP &trans &trans
-    &bootloader       &bt BT_CLR            &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &trans &none      &none   &kp LEFT &kp DOWN &kp RIGHT &kp PG_DN &trans &kp DEL
+    &bootloader       &bt BT_CLR            &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &trans &kp LEFT  &kp DOWN &kp RIGHT &kp PG_DN &trans &kp DEL
                                                       &kp LGUI    &mo SYM      &kp SPACE              &kp R   &mo FN &kp RET
             >;
         };
