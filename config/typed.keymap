@@ -14,30 +14,8 @@
 #define TAPPING_TERM 200
 
 / {
-    // Define custom behaviors for Layer-Tap and Mod-Tap
+    // Define custom behaviors for Mod-Tap
     behaviors {
-        lt_sym_spc: layer_tap_sym_space {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LAYER_TAP_SYM_SPACE";
-            bindings = <&mo>, <&kp>;
-            #binding-cells = <2>;
-            tapping-term-ms = <TAPPING_TERM>;
-            hold-binding = <&mo SYM>;     // Hold for Symbol layer
-            tap-binding = <&kp SPC>;      // Tap for Space
-            quick-tap-ms = <TAPPING_TERM>; // Allows tapping again quickly after holding
-        };
-
-        lt_fn_bspc: layer_tap_fn_backspace {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LAYER_TAP_FN_BACKSPACE";
-            bindings = <&mo>, <&kp>;
-            #binding-cells = <2>;
-            tapping-term-ms = <TAPPING_TERM>;
-            hold-binding = <&mo FN>;      // Hold for Function layer
-            tap-binding = <&kp BSPC>;     // Tap for Backspace
-            quick-tap-ms = <TAPPING_TERM>; // Allows tapping again quickly after holding
-        };
-
         // --- Mod-Taps (Hold for Mod, Tap for Key) ---
         // Uses the "balanced" flavor for better performance on home row.
         homerow_mod: mod_tap_balanced {
