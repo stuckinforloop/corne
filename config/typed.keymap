@@ -37,13 +37,13 @@
         base_layer {
             display-name = "ENT"; // Enthium v11
             bindings = <
-// ─────────────────────────────────────────────────────────────────────────────────────
-// │ ESC │ SFT │  Y  │  O  │  U  │  =  │                │  Q  │  L  │  D  │  P  │  X  │ DEL │
-// │  W  │  C  │  I  │  A  │  E  │  ;  │                │  K  │  H  │  T  │  N  │  S  │  F  │
-// │CTRL │  '  │  -  │  ,  │  .  │  /  │      │ │      │  J  │  M  │  G  │  B  │  V  │ ALT │
-// ───────────────────────────────────────────────────────────────────────────────────────
+// ───────────────────────────────────────────────────────────────────────────────────────────
+// │ ESC │ SFT │  Y  │  O  │  U  │  =  │                │  Q  │  L  │  D  │  P  │  X  │ BSPC │
+// │  W  │  C  │  I  │  A  │  E  │  ;  │                │  K  │  H  │  T  │  N  │  S  │  F   │
+// │CTRL │  '  │  -  │  ,  │  .  │  /  │      │ │       │  J  │  M  │  G  │  B  │  V  │ ALT  │
+// ───────────────────────────────────────────────────────────────────────────────────────────
 //                       │ CMD │ SYM │ SPC │          │  R  │ FN  │ ENT │
-    &kp ESC           &homerow_mod LSHIFT Z &kp Y   &kp O        &kp U        &kp EQUAL              &kp Q   &kp L &kp D     &kp P   &kp X    &kp DEL
+    &kp ESC           &homerow_mod LSHIFT Z &kp Y   &kp O        &kp U        &kp EQUAL              &kp Q   &kp L &kp D     &kp P   &kp X    &kp BSPC
     &kp W             &kp C                 &kp I   &kp A        &kp E        &kp SEMI               &kp K   &kp H &kp T     &kp N   &kp S    &kp F
     &kp LCTRL         &kp SQT               &kp MINUS &kp COMMA  &kp DOT      &kp FSLH  &kp J      &kp M   &kp G   &kp B &kp V     &kp LALT
                                                       &kp LGUI    &mo SYM      &kp SPACE              &kp R   &mo FN &kp RET
