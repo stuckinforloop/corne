@@ -35,7 +35,7 @@
         compatible = "zmk,keymap";
 
         base_layer {
-            display-name = "QWERTY";
+            display-name = "base";
             bindings = <
 // ─────────────────────────────────────────────────────────────────────────────────────
 // │ TAB  │  Q  │  W  │  E  │  R  │  T  │                │  Y  │  U  │  I  │  O  │  P  │BSPC │
@@ -45,8 +45,8 @@
 //                       │ ESC │ SYM │ SPC │          │DEL  │ FN  │ ENT │
     &kp TAB           &kp Q                 &kp W   &kp E        &kp R        &kp T                  &kp Y   &kp U &kp I     &kp O   &kp P    &kp BSPC
     &kp LCTRL         &kp A                 &kp S   &kp D        &kp F        &kp G                  &kp H   &kp J &kp K     &kp L   &kp SEMI &kp SQT
-    &kp SPACE         &kp Z                 &kp X   &kp C        &kp V        &kp B                  &kp N   &kp M   &kp COMMA &kp DOT &kp FSLH &kp RSHIFT
-                                                     &kp ESC     &mo SYM      &kp LGUI               &kp RET &mo FN &kp LALT
+    &kp LSHIFT        &kp Z                 &kp X   &kp C        &kp V        &kp B                  &kp N   &kp M   &kp COMMA &kp DOT &kp FSLH &kp LALT
+                                                     &kp ESC     &mo SYM      &kp SPACE              &kp RET &mo FN &kp LGUI
             >;
         };
 
