@@ -35,18 +35,18 @@
         compatible = "zmk,keymap";
 
         base_layer {
-            display-name = "ENT"; // Enthium v11
+            display-name = "QWERTY";
             bindings = <
 // ─────────────────────────────────────────────────────────────────────────────────────
-// │ ESC │ SFT │  Y  │  O  │  U  │  =  │                │  Q  │  L  │  D  │  P  │  X  │ DEL │
-// │  W  │  C  │  I  │  A  │  E  │  ;  │                │  K  │  H  │  T  │  N  │  S  │  F  │
-// │CTRL │  '  │  -  │  ,  │  .  │  /  │      │ │      │  J  │  M  │  G  │  B  │  V  │ ALT │
+// │ TAB  │  Q  │  W  │  E  │  R  │  T  │                │  Y  │  U  │  I  │  O  │  P  │BSPC │
+// │CTRL  │  A  │  S  │  D  │  F  │  G  │                │  H  │  J  │  K  │  L  │  ;  │  '  │
+// │SHIFT │  Z  │  X  │  C  │  V  │  B  │      │ │      │  N  │  M  │  ,  │  .  │  /  │SHIFT│
 // ───────────────────────────────────────────────────────────────────────────────────────
-//                       │ CMD │ SYM │ SPC │          │  R  │ FN  │ ENT │
-    &kp ESC           &homerow_mod LSHIFT Z &kp Y   &kp O        &kp U        &kp EQUAL              &kp Q   &kp L &kp D     &kp P   &kp X    &kp DEL
-    &kp W             &kp C                 &kp I   &kp A        &kp E        &kp SEMI               &kp K   &kp H &kp T     &kp N   &kp S    &kp F
-    &kp LCTRL         &kp SQT               &kp MINUS &kp COMMA  &kp DOT      &kp FSLH  &kp J      &kp M   &kp G   &kp B &kp V     &kp LALT
-                                                      &kp LGUI    &mo SYM      &kp SPACE              &kp R   &mo FN &kp RET
+//                       │ ESC │ SYM │ SPC │          │DEL  │ FN  │ ENT │
+    &kp TAB           &kp Q                 &kp W   &kp E        &kp R        &kp T                  &kp Y   &kp U &kp I     &kp O   &kp P    &kp BSPC
+    &kp LCTRL         &kp A                 &kp S   &kp D        &kp F        &kp G                  &kp H   &kp J &kp K     &kp L   &kp SEMI &kp SQT
+    &kp SPACE         &kp Z                 &kp X   &kp C        &kp V        &kp B                  &kp N   &kp M   &kp COMMA &kp DOT &kp FSLH &kp RSHIFT
+                                                     &kp ESC     &mo SYM      &kp LGUI               &kp RET &mo FN &kp LALT
             >;
         };
 
@@ -58,11 +58,11 @@
 // │  (  │  [  │  {  │  <  │  ?  │      │                │  `  │  >  │  }  │  ]  │  )  │  "  │
 // │  !  │  @  │  #  │  $  │  %  │  ^  │      │ │      │  &  │  *  │  +  │  /  │  |  │  \  │
 // ───────────────────────────────────────────────────────────────────────────────────────
-//                       │ CMD │ SYM │ SPC │          │  :  │ FN  │ ENT │
+//                       │ ESC │ SYM │ CMD │          │  :  │ FN  │ OPT │
     &kp N1            &kp N2                &kp N3   &kp N4       &kp N5       &kp N6                 &kp N7  &kp N8 &kp N9   &kp N0  &kp MINUS &kp EQUAL
     &kp LPAR          &kp LBKT              &kp LBRC &kp LT       &kp QUESTION &trans                 &kp GRAVE &kp GT &kp RBRC &kp RBKT &kp RPAR &kp DQT
     &kp EXCL          &kp AT                &kp HASH &kp DLLR     &kp PRCNT    &kp CARET &kp AMPS   &kp KP_MULTIPLY &kp PLUS &kp FSLH &kp PIPE &kp BSLH
-                                                      &kp LGUI    &mo SYM      &kp SPACE              &kp COLON &mo FN &kp RET
+                                                      &kp ESC     &mo SYM      &kp LGUI               &kp COLON &mo FN &kp LALT
             >;
         };
 
@@ -74,11 +74,11 @@
 // │  H  │  J  │  K  │  L  │      │      │                │HOME │  ↑  │ END │PGUP │      │      │
 // │BOOT │CLRBT│ BT1 │ BT2 │ BT3 │      │      │ │      │  ←  │  ↓  │  →  │PGDN │      │ DEL │
 // ───────────────────────────────────────────────────────────────────────────────────────
-//                       │ CMD │ SYM │ SPC │          │  R  │ FN  │ ENT │
+//                       │ ESC │ SYM │ CMD │          │  :  │ FN  │ OPT │
     &kp F1            &kp F2                &kp F3   &kp F4       &kp F5       &kp F6                 &kp F7  &kp F8 &kp F9   &kp F10 &kp F11  &kp F12
     &kp H             &kp J                 &kp K    &kp L        &trans       &trans                 &kp HOME &kp UP &kp END &kp PG_UP &trans &trans
     &bootloader       &bt BT_CLR            &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &trans &kp LEFT  &kp DOWN &kp RIGHT &kp PG_DN &trans &kp DEL
-                                                      &kp LGUI    &mo SYM      &kp SPACE              &kp R   &mo FN &kp RET
+                                                      &kp ESC     &mo SYM      &kp LGUI               &kp RET &mo FN &kp LALT
             >;
         };
     };

@@ -6,35 +6,33 @@ Custom ZMK firmware configuration for a split keyboard with Seeeduino XIAO BLE m
 
 ### Overview
 - **Hardware:** Typed Split (seeeduino_xiao_ble)
-- **Layout:** Enthium v11 (programmer-optimized)
+- **Layout:** QWERTY (standard)
 - **Layers:** 3 (BASE, SYM, FN)
-- **Special Features:** Mod-tap shift on Z, Bluetooth device switching
+- **Special Features:** Bluetooth device switching, number & symbol access on SYM layer
 
 ---
 
-## BASE LAYER (Enthium v11)
+## BASE LAYER (QWERTY)
 
 ```
 LEFT SIDE                              RIGHT SIDE
 ┌────┬────┬────┬────┬────┬────┐      ┌────┬────┬────┬────┬────┬────┐
-│ESC │ SFT│ Y  │ O  │ U  │ =  │      │ Q  │ L  │ D  │ P  │ X  │DEL │  Row 1
+│TAB │ Q  │ W  │ E  │ R  │ T  │      │ Y  │ U  │ I  │ O  │ P  │BSPC│  Row 1
 ├────┼────┼────┼────┼────┼────┤      ├────┼────┼────┼────┼────┼────┤
-│ W  │ C  │ I  │ A  │ E  │ ;  │      │ K  │ H  │ T  │ N  │ S  │ F  │  Row 2
+│CTRL│ A  │ S  │ D  │ F  │ G  │      │ H  │ J  │ K  │ L  │ ;  │ '  │  Row 2
 ├────┼────┼────┼────┼────┼────┤      ├────┼────┼────┼────┼────┼────┤
-│CTRL│ '  │ -  │ ,  │ .  │ /  │      │ J  │ M  │ G  │ B  │ V  │ALT │  Row 3
+│SPC │ Z  │ X  │ C  │ V  │ B  │      │ N  │ M  │ ,  │ .  │ /  │SHFT│  Row 3
 └────┴────┴────┴────┴────┴────┘      └────┴────┴────┴────┴────┴────┘
       ┌────┬────┬────┐                ┌────┬────┬────┐
-      │ CMD│ SYM│ SPC│                │ R  │ FN │ ENT│  Thumb row
+      │ESC │ SYM│ CMD│                │RET │ FN │ OPT│  Thumb row
       └────┴────┴────┘                └────┴────┴────┘
-
-SFT = Mod-tap: Hold Z for SHIFT, Tap for Z
 ```
 
 **Key Features:**
-- Enthium v11: Optimized for programming with excellent key frequencies
-- Shift on Z: Hold for shift, tap for Z (balanced flavor, 150ms idle requirement)
-- R on right thumb: Quick access for vim/tmux workflows
-- Ctrl and Alt modifiers on left and right columns
+- Standard QWERTY layout for familiarity
+- Familiar modifier positions: CTRL on left, SHIFT on both sides
+- Backspace on right top corner, Delete on right thumb for easy access
+- Numbers & symbols on SYM layer (no need for number row)
 
 ---
 
